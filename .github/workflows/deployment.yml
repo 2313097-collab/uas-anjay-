@@ -16,7 +16,7 @@ jobs:
 
       # 2. Build image terbaru
       - name: Build Image
-        run: docker compose build
+        run: docker compose build --no-cache
 
       # 3. Menghentikan container lama
       - name: Stop Container
