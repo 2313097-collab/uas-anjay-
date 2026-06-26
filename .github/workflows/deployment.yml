@@ -16,6 +16,7 @@ jobs:
 
       # 2. Build image terbaru
       - name: Build Image
+        shell: powershell {0} -ExecutionPolicy Bypass
         run: docker compose build --no-cache
 
       # 3. Menghentikan container lama
